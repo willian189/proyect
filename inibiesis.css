@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap');
+:root{
+    --efecto: .4rem .4rem 1rem #fff,
+          -.4rem -.4rem 1rem #ccc;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/FONDO_MALLA_SOFT_1.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    
+}
+
+.caja {
+    box-shadow: var(--efecto);
+    border-radius: 3rem;
+    position: relative;
+    margin: .5rem;
+    display: flex;
+    justify-content: space-around;
+    width:350px;
+    height:350px;
+   
+   
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;   
+      
+  
+}
+.caja img{
+    border-radius: 3rem;
+} 
+.caja6 {
+   
+    border-radius: 3rem;
+    position: relative;
+    margin: .5rem;
+    display: flex;
+    top: 150px;
+    width: 350px;
+    height: 350px;
+      
+  
+}
+
+.caja1::before{
+    background-image: url(./img/objetivofin.jpg);
+   background-size: cover;
+    
+}
+.caja2::before{
+     background-image: url(./img/misionfina.jpg);
+   background-size: cover;
+    
+}
+.caja3::before{
+     background-image: url(./img/visionfina.jpg);
+   background-size: cover;
+    
+}
+.caja4::before{
+     background-image: url(./img/responsafin.jpg);
+   background-size: cover;
+    
+}
+
+.caja5::before{
+     background-image: url(./img/asistentefina.jpg);
+   background-size: cover;
+    
+}
+.caja::before{
+    content: '';
+    position: absolute;
+    border-radius: 3rem;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    clip-path: circle(5.4rem at 0% 5%);
+    transition: .3s linear;
+}
+.caja:hover::before{
+    clip-path: circle(100%);
+   
+}
+
